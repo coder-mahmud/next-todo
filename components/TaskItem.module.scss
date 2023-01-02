@@ -1,0 +1,96 @@
+.actions{
+  display: flex;
+  gap:15px;
+
+  @media only screen and (max-width:480px){
+    flex-direction: column;
+  }
+
+  button{
+    display:flex;
+    gap:10px;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border:1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px 15px;
+
+    &:hover{
+      background: rgb(69, 69, 69);
+      color:#fff;
+    }
+
+    svg{
+      width: 25px;
+    }
+  }
+}
+
+.single_tak{
+  border:1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  list-style: none;
+  margin-bottom: 15px;
+  background:rgb(91, 89, 89);
+  color:#fff;
+
+  &.completed{
+    background:rgb(43, 145, 6);
+  }
+
+  .task_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media only screen and (max-width:650px){
+      flex-direction: column;
+      gap:15px;
+
+      & > div{
+        width: 100%;
+      }
+    }
+
+    h2{
+      margin:0;
+    }
+
+    p{
+      margin: 0;
+    }
+    button{
+      height: 50px;
+    }
+  }
+
+  .edit_form{
+    margin: 15px 0;
+    form{
+      display: flex;
+      gap:15px;
+
+      input{
+        padding:15px 10px;
+        border-radius: 8px;
+      }
+
+      button{
+        border-radius: 8px;
+        cursor:pointer;
+        padding:0 20px;
+        border:1px solid #ddd;
+
+        &:hover{
+          background: rgb(69, 69, 69);
+          color:#fff;
+        }
+      }
+    }
+  }
+
+
+}

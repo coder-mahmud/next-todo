@@ -24,3 +24,8 @@ a {
     background: black;
   }
 }
+
+.text-link{
+  text-decoration:underline;
+  color:green;
+}
